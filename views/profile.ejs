@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="margin: 10vh 25% 5vh 25%;">
+            <div class="alert alert-primary btn-lg btn-block" role="alert">
+                <span style="margin-left: 10vw;">Profile</span>
+            </div>
+        </div>
+        <div class="row">
+            <h1>Name - <%= data.name%></h1>
+        </div>
+        <div class="row">
+            <h1>Email - <%= data.email%></h1>
+        </div>
+            
+        <div class="row">
+            <h3>Contact - <%= data.phone%></h3>
+        </div>        
+    </div>
+        <div class="row" style="margin-top: 5vh;padding: 2vh 10vw;">
+            <div class="col-sm">
+                <p><b>Message</b> - <%=data.msg%></p>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 30vw;">
+            <div class="col-sm">
+                <a href="/output<%=data.name%>.pdf" class="btn btn-success">Download Your data</a>
+            </div>
+        </div>
+        
+    </div>
+    <script src = "/"
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
