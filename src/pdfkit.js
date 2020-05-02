@@ -5,7 +5,7 @@ const dataConverter = (data) => {
     console.log(data);
     const doc = new PDFDocument();
 
-    doc.pipe(fs.createWriteStream(`output${data.name}.pdf`));
+    doc.pipe(fs.createWriteStream(`public/pdf/output${data.name}.pdf`));
     doc.image('public/Logo.png',0,40,{fit: [70, 70]});
     doc.text(`Name - ${data.name}`,100,80, {
         width: 300,

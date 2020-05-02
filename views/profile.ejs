@@ -31,12 +31,18 @@
         </div>
         <div class="row" style="margin-left: 30vw;">
             <div class="col-sm">
-                <a href="/output<%=data.name%>.pdf" class="btn btn-success">Download Your data</a>
+                <a href="/pdf/output<%=data.name%>.pdf" target="_blank" class="btn btn-success">Download Your data</a>
             </div>
         </div>
         
+        <object data="/pdf/output<%=data.name%>.pdf" type="application/pdf" width="600" height="500">
+            <embed src="/pdf/output<%=data.name%>.pdf" width="600px" height="500px" />
+                <p>This browser does not support PDFs. Please download the PDF to view it: 
+                <a href="/pdf/output<%=data.name%>.pdf">Download PDF</a>.</p>
+            </embed></object>
+        
+                
     </div>
-    <script src = "/"
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
